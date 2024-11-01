@@ -5,9 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Woolf. HW#4</title>
     <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/specific.css" />
   </head>
   <body>
-    <p>Let's start...</p>
+    <form class="search-form">
+      <input
+        type="text"
+        class="search-input"
+        name="search-query"
+        placeholder="Search images..."
+      />
+      <button type="submit" class="search-btn">Search</button>
+    </form>
+
+    <div class="loader hidden"></div>
+
+    <div class="gallery"></div>
+
     <script type="module" src="./main.js"></script>
   </body>
 </html>
