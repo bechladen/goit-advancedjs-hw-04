@@ -11,7 +11,6 @@ import {
 const form = document.querySelector('.search-form');
 const input = document.querySelector('.search-input');
 const loadMoreButton = document.querySelector('.load-more');
-const loader = document.querySelector('.loader');
 
 let query = '';
 let page = 1;
@@ -23,8 +22,9 @@ form.addEventListener('submit', async event => {
   event.preventDefault();
 
   query = input.value.trim();
-  if (!query) {
+  if (!query || query === '') {
     showError('Please enter a search term');
+    input.value = '';
     return;
   }
 
@@ -39,6 +39,7 @@ form.addEventListener('submit', async event => {
 
     if (data.hits.length === 0) {
       showError('No images found. Please try a different search query.');
+      input.value = '';
       return;
     }
 

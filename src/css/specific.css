@@ -1,4 +1,4 @@
-/* #region Common */
+/* #region Basic */
 body {
   font-family: Montserrat, sans-serif;
   font-size: 16px;
@@ -22,12 +22,12 @@ body {
   display: block;
   margin: 0 auto;
   margin-top: 32px;
-  margin-bottom: 36px;
+  margin-bottom: 32px;
 }
 .hidden {
   display: none;
 }
-/* #endregion Common */
+/* #endregion Basic */
 
 /* #region Form */
 .search-form {
@@ -35,7 +35,7 @@ body {
   gap: 8px;
   justify-content: center;
   margin: 0 auto;
-  margin-top: 36px;
+  margin-top: 32px;
   margin-bottom: 32px;
 }
 
@@ -74,7 +74,9 @@ body {
 }
 .loader {
   margin: 0 auto;
-  margin-top: 10px;
+  margin-top: 32px;
+  /* ther might be a discrepancy with the mb */
+  margin-bottom: 50px;
   color: #2e2f42;
   font-size: 7px;
   position: relative;
@@ -111,6 +113,7 @@ body {
 /* #region Gallery */
 .gallery {
   display: flex;
+  margin-bottom: 32px;
   flex-wrap: wrap;
   padding: 0 24px;
   gap: 24px;
