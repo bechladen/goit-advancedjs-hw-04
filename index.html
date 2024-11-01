@@ -5,9 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Woolf. HW#4</title>
     <script type="module" crossorigin src="/vanilla-app-template/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/index-Cs8_1vt_.css">
+    <link rel="modulepreload" crossorigin href="/vanilla-app-template/assets/vendor-BrddEoy-.js">
+    <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/vendor-CWKLx11g.css">
+    <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/index-CD_7tjaX.css">
   </head>
   <body>
-    <p>Let's start...</p>
+    <form class="search-form">
+      <input
+        type="text"
+        class="search-input"
+        name="search-query"
+        placeholder="Search images..."
+      />
+      <button type="submit" class="search-btn">Search</button>
+    </form>
+
+    <div class="loader hidden"></div>
+
+    <div class="gallery"></div>
+
   </body>
 </html>
